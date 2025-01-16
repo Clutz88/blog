@@ -22,6 +22,7 @@ class PostResource extends JsonResource
             'user' => UserResource::make($this->user),
             'reactions' => ReactionResource::collection($this->reactions),
             'comments' => CommentResource::collection($this->comments),
+            'tags' => TagResource::collection($this->tags),
         ];
     }
 }
